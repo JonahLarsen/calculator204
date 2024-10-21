@@ -5,7 +5,7 @@ class Calculator {
 
     }
 
-    int add(int a , int b){
+    int add(int a , int b) {
         return a + b;
     }
 
@@ -37,8 +37,15 @@ class Calculator {
     .
     etc
      */
-    int fibonacciNumberFinder(int n){
-        return 0;
+    int fibonacciNumberFinder(int n) {
+        int previous = 0;
+        int current = 1;
+        for (int i = 1; i < n; i++) {
+            int temp = current;
+            current = previous + current;
+            previous = temp;
+        }
+        return current;
     }
 
 
