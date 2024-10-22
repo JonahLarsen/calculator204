@@ -6,19 +6,19 @@ class Calculator {
 
     }
 
-    int add(int a , int b) {
+    static int add(int a, int b) {
         return a + b;
     }
 
-    int subtract(int a , int b){
+    static int subtract(int a, int b){
         return a - b;
     }
 
-    int multiply(int a , int b){
+    static int multiply(int a, int b){
         return a * b;
     }
 
-    int divide(int a , int b){
+    static int divide(int a, int b){
         return a / b;
     }
 
@@ -38,7 +38,7 @@ class Calculator {
     .
     etc
      */
-    int fibonacciNumberFinder(int n) {
+    static int fibonacciNumberFinder(int n) {
         int previous = 0;
         int current = 1;
         for (int i = 1; i < n; i++) {
@@ -57,7 +57,7 @@ class Calculator {
     if int a = 10 then this method returns: 1010
     if int a = 16 then this method returns: 10000
      */
-    String intToBinaryNumber(int number) {
+    static String intToBinaryNumber(int number) {
         return Integer.toBinaryString(number);
     }
 
